@@ -1,0 +1,403 @@
+/* ========================
+   PORTFOLIO STYLESHEET
+   ======================== */
+
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0052a3;
+}
+
+/* ========================
+   HEADER STYLES
+   ======================== */
+.header {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.header-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* ========================
+   NAVIGATION STYLES
+   ======================== */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+/* ========================
+   MAIN CONTAINER
+   ======================== */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* ========================
+   SECTION STYLES
+   ======================== */
+.section {
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.section-title {
+    color: #0066cc;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #0066cc;
+    padding-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.section-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* ========================
+   SKILLS SECTION
+   ======================== */
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e0eeff 100%);
+    padding: 1rem 0.75rem;
+    text-align: center;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #0066cc;
+    border: 1px solid #cce5ff;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.skill-item:hover {
+    background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
+}
+
+/* ========================
+   PROJECTS SECTION
+   ======================== */
+.project-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-left: 4px solid #0066cc;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    background-color: #f0f7ff;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    color: #0052a3;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.project-meta {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.project-details {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #555;
+}
+
+.project-details li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* ========================
+   EDUCATION SECTION
+   ======================== */
+.education-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #0066cc;
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    background-color: #f0f7ff;
+}
+
+.education-degree {
+    font-size: 1.1rem;
+    color: #0052a3;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.education-details {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ========================
+   CERTIFICATIONS SECTION
+   ======================== */
+.certifications-list {
+    list-style: none;
+}
+
+.cert-item {
+    padding: 0.75rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.cert-item::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cert-item:hover {
+    color: #0066cc;
+    padding-left: 2rem;
+}
+
+/* ========================
+   UTILITY CLASSES
+   ======================== */
+.center {
+    text-align: center;
+}
+
+/* ========================
+   CONTACT SECTION
+   ======================== */
+.contact-link {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #f0f7ff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: 1px solid #cce5ff;
+}
+
+.contact-link:hover {
+    background-color: #0066cc;
+    color: #fff;
+    border-color: #0066cc;
+    transform: translateY(-2px);
+}
+
+/* ========================
+   FOOTER STYLES
+   ======================== */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+   ======================== */
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 1.8rem;
+    }
+
+    .header-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .header {
+        padding: 2rem 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .section {
+        margin: 1.5rem auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 0.75rem;
+    }
+
+    .skill-item {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .project-item,
+    .education-item {
+        padding: 1.25rem 1rem;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .education-degree {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .header-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .section {
+        margin: 1rem 0;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+
+    .skill-item {
+        padding: 0.65rem 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    .project-details,
+    .cert-item {
+        font-size: 0.9rem;
+    }
+}
